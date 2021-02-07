@@ -1048,22 +1048,17 @@ function load() {
 
 function exportSave(){
 	save();
-	var output = document.getElementById("exportOutput");
+	var output = document.getElementById("importExportText");
 	
 	output.value = btoa(JSON.stringify(player));
-	
-	alert(output.value);
 }
 
 function importSave(){
-	var input = prompt("Input your save here. (Your current save file will be overwritten!!)");
-	console.log(input);
-	input = JSON.parse(atob(input));
-	//console.log(input);
+	var input = document.getElementById("importExportText");
+	
+	input = JSON.parse(atob(input.value));
 	player = input;
-	//console.log(input);
-	//localStorage.incGame = input;
-	//load();
+	transformToDecimal(player)
 }
 
 function transformToDecimal(object) { 
