@@ -302,9 +302,11 @@
 			<div class="tabPanel" id="infoTab"></div>
 			
 			<div class="tabPanel" id="exportImportTab">
-				<div style="display none;"><textarea id="exportOutput" style="display: none;"></textarea></div>
-				<div id="export" onclick="exportSave()">EXPORT SAVEFILE</div>
-				<div id="import" onclick="importSave()">IMPORT SAVEFILE</div>
+				<textarea id="importExportText"></textarea>
+				<div id="exportImportContainer">
+					<div class="exportImport" onclick="exportSave()">EXPORT SAVEFILE</div>
+					<div class="exportImport" onclick="importSave()">IMPORT SAVEFILE</div>
+				</div>
 			</div>
 			
 			<div class="tabPanel" id="simulationTab">
