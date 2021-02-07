@@ -889,29 +889,26 @@ html{
 	margin-top: 20px;
 }
 
-#export{
+#exportImportContainer{
+	display: flex;
+	justify-content: center;
+}
+
+.exportImport{
 	width: 250px;
 	height: 100px;
 	background-color: #5B5B5B;
-	margin: 10px 0 10px 0;
+	margin: 10px;
 	font-size: 25px;
 	display: flex;
 	align-items: center;
 	justify-content: center;
 }
 
-#import{
-	width: 250px;
-	height: 100px;
-	background-color: #5B5B5B;
-	margin: 10px 0 10px 0;
-	font-size: 25px;
-	display: flex;
-	align-items: center;
-	justify-content: center;
+
+#importExportText{
+	height: 250px;
 }
-
-
 
 
 
